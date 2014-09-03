@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Errors">
+      <UniqueIdentifier>{dc6ead37-e30a-4ea3-ab28-e9c5d873f933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Errors">
+      <UniqueIdentifier>{9647c4ac-e9a0-47e5-ad88-85e648c63348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{2f0d2336-698a-4644-acd2-e6f88f2c449f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{e2b2ca01-3006-42d6-9774-816045978d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Filter">
+      <UniqueIdentifier>{d9805125-a664-4de4-935a-46821bf33344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Filter">
+      <UniqueIdentifier>{bf1661e5-c364-4e4e-a785-c1ad0ab916cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sync">
+      <UniqueIdentifier>{4c562d3a-9445-40db-898c-1e2536e0ea29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sync">
+      <UniqueIdentifier>{b99571d8-4af0-4b36-8022-3fe72b6083a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorsElement.cpp">
+      <Filter>Source Files\Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorsHandler.cpp">
+      <Filter>Source Files\Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="IOfunctions.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemWraper.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter.cpp">
+      <Filter>Source Files\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderPair.cpp">
+      <Filter>Source Files\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Source Files\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectoryIndex.cpp">
+      <Filter>Source Files\Sync</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OneWaySync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorsElement.h">
+      <Filter>Header Files\Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorsHandler.h">
+      <Filter>Header Files\Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="IOfunction.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemWraper.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter.h">
+      <Filter>Header Files\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectoryIndex.h">
+      <Filter>Header Files\Sync</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Header Files\Sync</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderPair.h">
+      <Filter>Header Files\Sync</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
