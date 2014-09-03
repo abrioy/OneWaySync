@@ -7,7 +7,14 @@ using namespace std;
 
 /*
 	TODO :
-		catch erreur regex
+		regex
+*/
+
+/*
+Test Command Line
+-s "C:\TEST_SOURCE" -t "C:\TEST_TARGET" -m fast -f ".*f[1-2]" ".*d1.*" -e 3 5 -v 3
+
+
 */
 
 void printHelp()
@@ -26,7 +33,7 @@ void printHelp()
 		<< "         fast     : Compare the name, last modification date, and size of the files" << endl
 		<< "         accurate : Compare the md8 hash of the files" << endl
 		<< endl
-		<< "   -f -filter 'Regex1' 'Regex2' 'RegexN'" << endl
+		<< "   -f -filter \"Regex1\" \"Regex2\" \"RegexN\"" << endl
 		<< "         Filter out every file and folder matching the regexes" << endl
 		<< endl
 		<< "   -e -errorfix  n t" << endl
@@ -144,7 +151,10 @@ int wmain(int argc, wchar_t* argv[])
 		return 0;
 	}
 
-	wcout << endl << endl << endl << L"Sync in progress ..." << endl;
+
+
+
+	wcout << endl << endl << L"----------" << endl << L"Sync in progress ..." << endl;
 
 
 
@@ -155,7 +165,7 @@ int wmain(int argc, wchar_t* argv[])
 	syncPair.Sync();
 
 
-	wcout << endl << L"Syncing is over.";
+	wcout << endl << L"Syncing is over." << endl << L"----------" << endl;
 
 
 	// Error retrying
@@ -174,12 +184,11 @@ int wmain(int argc, wchar_t* argv[])
 
 
 
-
 	/*
-	filter.AddCondition(L".*F[1-3]");
+	filter.AddCondition(L".*f[1-3]");
 
-	FolderPair Test1 = FolderPair(new String(L"C:\\_FOLDER1"), new String(L"C:\\_FOLDER2"), L"", filter);
-	FolderPair Test2 = FolderPair(new String(L"C:\\_FOLDER11"), new String(L"C:\\_FOLDER2"), L"", filter);
+	FolderPair Test1 = FolderPair(new String(L"C:\\TEST_SOURCE"), new String(L"C:\\TEST_TARGET"), L"", filter, CompareMode::Fast);
+	FolderPair Test2 = FolderPair(new String(L"C:\\TEST_SOURCE"), new String(L"C:\\TEST_TARGET"), L"", filter, CompareMode::Fast);
 	Test1.Sync();
 	wcout << endl << endl << endl;
 	Sleep(1000);
@@ -191,7 +200,7 @@ int wmain(int argc, wchar_t* argv[])
 
 	
 
-	FolderPair Test3 = FolderPair(new String(L"C:\\Users\\Miow\\AppData"), new String(L"H:\\BACKUP\\AppData"), L"", filter);
+	FolderPair Test3 = FolderPair(new String(L"C:\\Users\\Miow\\AppData"), new String(L"H:\\BACKUP\\AppData"), L"", filter, CompareMode::Fast);
 	//Test3.Sync();
 	
 
